@@ -3,72 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gael Perez MakeUp Studio</title>
+    <title>Gael Pérez MakeUp Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Gael Perez MakeUp Studio</h1>
-        <nav>
-            <ul>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+
+    <!-- HEADER CON LOGO -->
+    <header class="header">
+        <div class="header-content">
+            <img src="img/logo.jpg" alt="Logo de Gael Peres" class="logo">
+            <div>
+                <h1>Gael Pérez MakeUp Studio</h1>
+                <p>Maquillaje Social • Editorial • Artístico</p>
+            </div>
+        </div>
     </header>
 
-    <section id="hero">
-        <h2>Maquillaje profesional para cada ocasión</h2>
-        <p>Descubre la belleza que hay en ti con el toque de Gael.</p>
-    </section>
-
-    <section id="servicios">
+    <!-- SERVICIOS PRINCIPALES -->
+    <section id="servicios" class="servicios">
         <h2>Servicios</h2>
-        <div class="servicios-container">
-            <div class="servicio-card">
+
+        <div class="servicios-grid">
+
+            <div class="servicio-item">
                 <img src="img/social.jpg" alt="Maquillaje social">
                 <h3>Maquillaje Social</h3>
-                <p>Ideal para eventos, fiestas o sesiones casuales. Realza tu belleza natural.</p>
+                <p class="descripcion">
+                    Ideal para eventos, fiestas y ocasiones especiales. Un estilo fresco y elegante diseñado para resaltar tu belleza natural y lucir impecable durante todo el día.
             </div>
-            <div class="servicio-card">
+
+            <div class="servicio-item">
                 <img src="img/editorial.jpg" alt="Maquillaje editorial">
                 <h3>Maquillaje Editorial</h3>
-                <p>Perfecto para producciones, sesiones de moda y fotografía profesional.</p>
+                <p class="descripcion">
+                    Maquillaje creativo y de alto impacto pensado para sesiones fotográficas, moda, revistas y campañas publicitarias. Perfecto para destacar en cámaras con un acabado profesional.
             </div>
-            <div class="servicio-card">
-                <img src="img/novias.jpg" alt="Maquillaje de novia">
-                <h3>Maquillaje de Novia</h3>
-                <p>Para el día más importante, un look impecable que dure todo el evento.</p>
+
+            <div class="servicio-item">
+                <img src="img/artistico.jpg" alt="Maquillaje artístico">
+                <h3>Maquillaje Artístico</h3>
+                <p class="descripcion">
+                    Maquillaje creativo y detallado que transforma completamente el rostro o el cuerpo. Ideal para catrinas, personajes, caracterizaciones y body paint profesional.
+                </p>
             </div>
+
         </div>
     </section>
 
-    <section id="galeria">
+    <!-- NUEVA SECCIÓN: SERVICIOS ADICIONALES -->
+    <section id="extras" class="extras">
+        <h2>Servicios Adicionales</h2>
+
+        <div class="extras-grid">
+
+            <div class="extra-item">
+                <img src="img/tocado.jpg" alt="Tocados artesanales">
+                <h3>Tocados Artesanales</h3>
+                <p class="descripcion">Diseños únicos hechos a mano para eventos, sesiones y editoriales.</p>
+            </div>
+
+            <div class="extra-item">
+                <img src="img/papelmache.jpg" alt="Figura de papel maché">
+                <h3>Figuras en Papel Maché</h3>
+                <p class="descripcion">Esculturas artesanales para decoración, utilería y fotografía.</p>
+            </div>
+
+            <div class="extra-item">
+                <img src="img/mascara.jpeg" alt="Máscara artística">
+                <h3>Máscaras Artísticas</h3>
+                <p class="descripcion">Creación de máscaras personalizadas, ideales para sesiones conceptuales.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="galeria">
         <h2>Galería</h2>
+
         <div class="galeria-grid">
-            <img src="img/1.jpg" alt="Trabajo 1">
-            <img src="img/2.jpg" alt="Trabajo 2">
-            <img src="img/3.jpg" alt="Trabajo 3">
-            <img src="img/4.jpg" alt="Trabajo 4">
-            <img src="img/5.jpg" alt="Trabajo 5">
-            <img src="img/6.jpg" alt="Trabajo 6">
+            <img src="img/1.jpg" alt="Galería 1">
+            <img src="img/2.jpg" alt="Galería 2">
+            <img src="img/3.jpg" alt="Galería 3">
+            <img src="img/4.png" alt="Galería 4">
+            <img src="img/5.jpg" alt="Galería 5">
+            
         </div>
     </section>
 
-    <section id="contacto">
-        <h2>Contáctame</h2>
-        <p>Sígueme o agenda tu cita:</p>
-        <div class="contacto-links">
-            <a href="https://www.instagram.com/tuusuario" target="_blank" class="btn instagram">Instagram</a>
-            <a href="https://wa.me/521XXXXXXXXXX" target="_blank" class="btn whatsapp">WhatsApp</a>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+
+        <div class="contacto-botones">
+            <a 
+    href="https://wa.me/529996373069?text=Hola,%20me%20gustaría%20recibir%20información%20sobre%20tus%20servicios%20de%20maquillaje.%20¿Podrías%20compartirme%20disponibilidad%20y%20costos?" 
+    target="_blank" 
+    class="boton whatsapp"
+>
+    WhatsApp
+</a>
+
+            <a href="https://instagram.com/gael_perezzz" target="_blank" class="boton instagram">Instagram</a>
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 Gael Perez MakeUp Studio | Desarrollado por Johan</p>
-    </footer>
+    <footer class="footer">
+    <p>© 2025 Gael Pérez MakeUp Studio — Todos los derechos reservados.</p>
+    <p class="dev">Desarrollado por Johan Méndez</p>
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>

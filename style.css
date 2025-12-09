@@ -1,187 +1,233 @@
-/* --- Configuración base --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+/* PALETA:
+#0D0F46
+#295ba0
+#69D2CD
+#B9F1D6
+#F1F6CE
+*/
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fffafc;
-    color: #2b2b2b;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0D0F46;
+    color: #F1F6CE;
+}
+@font-face {
+    font-family: "GillSansUltraBold";
+    src: url("fonts/GillSansUltraBold.ttf") format("truetype");
+    font-weight: bold;
 }
 
-/* --- Header --- */
-header {
-    background-color: #f5e6ee;
-    color: #2b2b2b;
-    padding: 1rem 2rem;
+h1 {
+    font-family: "GillSansUltraBold", sans-serif;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/MontserratVariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900; /* permite todos los pesos */
+    font-style: normal;
+}
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; /* semi-bold */
+}
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* HEADER CON LOGO */
+.header {
+    background: #295ba0;
+    padding: 20px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    gap: 20px;
 }
 
-header h1 {
-    font-weight: 700;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
-nav ul {
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #F1F6CE;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 18px;
+    color: #B9F1D6;
+}
+
+/* SECCIÓN SERVICIOS */
+.servicios {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.servicios h2 {
+    color: #B9F1D6;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.servicios-grid {
     display: flex;
-    list-style: none;
-    gap: 1.5rem;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-nav a {
-    text-decoration: none;
-    color: #2b2b2b;
-    font-weight: 500;
-    transition: color 0.3s;
+.servicio-item {
+    max-width: 250px;
 }
 
-nav a:hover {
-    color: #b86fa7;
-}
-
-/* --- Hero --- */
-#hero {
-    background-image: url('img/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: white;
-    padding: 7rem 2rem;
-    background-color: #b86fa7b3;
-    background-blend-mode: multiply;
-}
-
-#hero h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-/* --- Servicios --- */
-#servicios {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-#servicios h2 {
-    margin-bottom: 2rem;
-    color: #b86fa7;
-}
-
-.servicios-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.servicio-card {
-    background: white;
-    border-radius: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.servicio-card:hover {
-    transform: scale(1.05);
-}
-
-.servicio-card img {
-    width: 100%;
-    height: 220px;
+.servicios-grid img {
+    width: 250px;
+    height: 300px;
     object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.35);
 }
 
-.servicio-card h3 {
-    margin: 1rem 0 0.5rem;
-    color: #b86fa7;
+.servicio-item h3 {
+    margin-top: 12px;
+    color: #F1F6CE;
 }
 
-.servicio-card p {
-    padding: 0 1rem 1.5rem;
+.descripcion {
+    color: #B9F1D6;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
-/* --- Galería --- */
-#galeria {
-    background-color: #f8f5f7;
-    padding: 4rem 2rem;
+/* SERVICIOS ADICIONALES */
+.extras {
+    padding: 60px 20px;
     text-align: center;
 }
 
-#galeria h2 {
-    margin-bottom: 2rem;
-    color: #b86fa7;
+.extras h2 {
+    color: #B9F1D6;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.extras-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.extra-item {
+    max-width: 250px;
+}
+
+.extras-grid img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+}
+
+.extra-item h3 {
+    margin-top: 12px;
+    color: #F1F6CE;
+}
+
+/* GALERÍA */
+.galeria {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.galeria h2 {
+    color: #B9F1D6;
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
 .galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .galeria-grid img {
-    width: 100%;
-    border-radius: 0.8rem;
-    transition: transform 0.3s;
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.35);
 }
 
-.galeria-grid img:hover {
-    transform: scale(1.05);
-}
-
-/* --- Contacto --- */
-#contacto {
-    padding: 4rem 2rem;
+/* CONTACTO */
+.contacto {
+    padding: 60px 20px;
     text-align: center;
 }
 
-#contacto h2 {
-    color: #b86fa7;
-    margin-bottom: 1rem;
+.contacto h2 {
+    color: #B9F1D6;
+    font-size: 32px;
+    margin-bottom: 25px;
 }
 
-.contacto-links {
-    margin-top: 2rem;
+.contacto-botones {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 25px;
 }
 
-.btn {
-    padding: 0.8rem 1.5rem;
-    border-radius: 2rem;
+.boton {
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-size: 18px;
     text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: all 0.3s;
+
+    /*  SE AGREGA MONTSERRAT BOLD */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; /* bold real del variable font */
+
+    color: #0D0F46;
+    background: #69D2CD;
+    transition: 0.25s;
 }
 
-.instagram {
-    background-color: #d62976;
-}
-
-.whatsapp {
-    background-color: #25d366;
-}
-
-.btn:hover {
+.boton:hover {
+    background: #B9F1D6;
     transform: scale(1.05);
-    opacity: 0.9;
 }
 
-/* --- Footer --- */
-footer {
-    background-color: #f5e6ee;
+
+.footer {
+    background-color: #0D0F46;
+    color: #F1F6CE;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
+    margin-top: 40px;
     font-size: 0.9rem;
-    color: #555;
+}
+
+.footer .dev {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
